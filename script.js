@@ -1,4 +1,6 @@
+import {inject} from '@vercel/analytics'
 
+inject();
 const fadeInElements = document.querySelectorAll(".fade-element");
 const introGreet = document.getElementById("intro-greet");
 const introName = document.getElementById("intro-name");
