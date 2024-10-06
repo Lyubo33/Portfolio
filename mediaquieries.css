@@ -1,0 +1,82 @@
+@media screen and (max-width:1200px){
+    #nav-menu-desktop{
+        display: none;
+
+    }
+    #nav-menu{
+        display:flex;
+    }
+    .btns{
+        align-items: center;
+    }
+    .main{
+        align-items:center;
+        padding-top: 2rem;
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-photo{
+        margin-left: 2.5rem;
+        align-self: center;
+    }
+    .info text{
+        width: 100vw;
+    }
+    .skills-education{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills{
+        width: 90vw;
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills div{
+        width: 90%;
+        margin: 0.5rem;
+        height:fit-content;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .logos{
+        width: 50px;
+        height:50px;
+        margin: 0;
+    }
+    .education {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .education div{
+        text-align: left;
+        width: fit-content;
+        margin: 2rem;
+    }
+    .projects{
+        flex-direction: column;
+    }
+    .project{
+        margin: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        height: fit-content;
+        transform: none;
+    }
+    .project > .project-info > p{
+        display: none;
+    }
+    .project:hover{
+        width:fit-content;
+    }
+    .project:hover > .project-info > p{
+        display: flex;
+    }
+}

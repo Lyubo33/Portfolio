@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang = "en bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyubo's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquieries.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-menu-desktop">
+            <div class="nav-title">Lyubo's portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#top">About</a></li>
+                <li><a href="#skills-education">Skills and Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact me</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-menu">
+            <div class="nav-title">Lyubo's portfolio</div>
+            <div class="menu">
+                <div class="menu-icon" onclick= "toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#top" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills-education">Skills and Education</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contacts" onclick="toggleMenu()">Contact me</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <section class="about">
+            <div id="profile-photo" class="profile-photo fade-element"></div>
+            <div class="info fade-element">
+                <h1 class="">About me</h1>
+                <p id="intro-greet"></p>
+                <h3 id="intro-name"></h3>
+                <p id="intro-text"></p>
+                <div class="btns fade-element">
+                    <button class="btn" id="cv">Download CV</button>
+                    <a href="#contacts"><button class="btn">Contact Me</button></a>
+                </div>
+                <h4 class="">Socials:</h4>
+                <div class="socials fade-element">
+                    <a href="https://github.com/Lyubo33"><button class="git"><img src="assets/github-mark.svg" alt="GitHub"/></button></a>
+                    <a href="https://www.linkedin.com/in/lyuboslav-petrov"><button class="linked-in"><img src="assets/linked-in-logo.png" alt="LinkedIn"/></button></a>
+                </div>
+            </div>
+        </section>
+        <h2  id="skills-education" class="fade-element" style="padding-top: 10rem;">Skills and Education</h2>
+        <section  class="skills-education fade-element">
+            <div class="skills">
+                <div class="fade-element">
+                    <img class="logos" src="assets/tech-logos/rust-logo.svg">
+                        <p class="logo-name">Rust</p>   
+                    </img>
+                    <img class="logos" src="assets/tech-logos/java-logo.svg">
+                        <p class="logo-name">Java</p>
+                    </img>
+                    <img class="logos" src="assets/tech-logos/android-logo.svg">
+                        <p class="logo-name">Android</p>
+                    </img>
+                    <img class="logos" src="assets/tech-logos/cpp-logo.svg">
+                        <p class="logo-name">C++</p>
+                    </img>  
+                </div>
+                <div class="fade-element">
+                    <img class="logos" src="assets/tech-logos/html-logo.svg">
+                        <p class="logo-name">HTML</p>
+                    </img>
+                    <img class="logos" src="assets/tech-logos/css-logo.svg">
+                        <p class="logo-name">CSS</p>
+                    </img>
+                    <img class="logos" src="assets/tech-logos/js-logo.svg">
+                        <p class="logo-name">JavaScript</p>
+                    </img>
+                    <img class="logos" src="assets/tech-logos/tauri-logo.svg">
+                        <p class="logo-name">Tauri</p>
+                    </img>
+                </div>
+            </div>
+            <div class="education">
+                <div class="fade-element">
+                    <h3>2024-2025:</h3>
+                        <h4>Technical University Sofia</h4>
+                        <p> - Master's in Computer and Software Engineering(Currently pursuing)</p>
+                </div>
+                <div class="fade-element">
+                    <h3>2020-2024:</h3>
+                    <h4>Technical University Sofia</h4>
+                    <p>- Bachelor's in Computer and Software Engineering</p>
+                </div>
+            </div>
+        </section>
+        <h2 class="fade-element" id="projects"style="padding-top: 10rem;">Check out my projects</h2>
+        <section class="projects fade-element">
+            <div class="project" >
+                <div class="project-img">
+                    <img src="assets/Casette-Logo.png" alt="Casette-Logo"/>
+                </div>
+                <div class="project-info">
+                    <h1>Cassette</h1>
+                    <p>
+                        Cassette is a desktop music player that allows you to play music files from a local directory on your device, 
+                        organize music in playlists and search through your directory, 
+                        leveraging Rust's power for audio playback and html, css and javascript 
+                        to provide a flexible user interface. Because of Tauri's capabilities 
+                        the use of native webview is possible without compromising the final size
+                        of the application binary. Cassette served as my diploma project for my Bachelor's degree in computer and software engineering.
+                    </p>
+                    <div class="btns">
+                        <a href="https://github.com/Lyubo33/Cassette-music-player/releases"><button class="btn">Download Cassette</button></a>
+                        <a href="https://github.com/Lyubo33/Cassette-music-player"><button class="btn">Check project</button></a>
+                    </div>              
+
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="assets/Droplet-Logo.png" alt="Droplet-Logo" />
+                </div>
+                <div class="project-info">
+                    <h1>Droplet</h1>
+                    <p>
+                        Droplet is an android water reminder app that should remind you to drink more water.
+                        It's supposed to adapt to your personal water drinking habits by taking into account 
+                        your wake up time, bedtime, weight in kg and water cup size in ml to calculate reminders 
+                        spread evenly through your active day. The app follows the baseline of 35ml per kilogram of bodyweight 
+                        for adults to determine the optimal water drinking goal for the day.
+                        Of course this app is meant to serve as a baseline towards healthier water drinking habits 
+                        and is by no means intended to replace medical advice. 
+                        For health concerns with water drinking and related topics, please seek your doctor's advice.
+                    </p>
+                    <div class="btns">
+                        <a href="https://github.com/Lyubo33/DropletWaterReminder/releases"><button class="btn">Download Droplet</button></a>
+                        <a href="https://github.com/Lyubo33/DropletWaterReminder"><button class="btn">Check project</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="fade-element"> 
+        <h2>Contact me</h2>
+        <div id="contacts">
+            <section class="email">
+                <p>Contact me via email:</p>
+                <a href="mailto:lyubcho50@gmail.com"><button class="btn"><img src="assets/mail-icon.svg"/>
+                    <p class="btn-txt">Send Mail</p>
+                </button></a>
+            </section>
+            <section class="others"> 
+                <p> Contact me on LinkedIn:</p>
+               <a href="https://www.linkedin.com/in/lyuboslav-petrov"><button class="btn"><img src="assets/linked-in-logo.png"/>
+                <p class="btn-txt">LinkedIn</p>
+            </button></a>
+            </section>
+        </div>
+        <p>&copy; 2024 Lyuboslav Petrov. All rights reserved</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
