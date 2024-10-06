@@ -14,13 +14,19 @@ const observer = new IntersectionObserver((entries) =>{
     });
 },{threshold:0.1, rootMargin: '0px 0px -10px 0px'});
 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const links = document.querySelector(".menu-links")
+    menuToggle.addEventListener('click',toggleMenu);
+    links.addEventListener('click',toggleMenu);
+    
+});
+
 function toggleMenu(){
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".menu-icon");
-
     menu.classList.toggle("open");
     icon.classList.toggle("open");
-
 }
 function typeWrite(element, text , speed=26, callback){
     let i =0;
@@ -59,6 +65,7 @@ function TypeOut(introGreet,introName,introText){
 }
 
 fadeInElements.forEach((el) => observer.observe(el));
+
 window.onload = () =>{
     document.getElementById('skills-education').style.opacity = '0';
     TypeOut(introGreet,introName,introText);
