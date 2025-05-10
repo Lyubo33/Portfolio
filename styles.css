@@ -26,21 +26,30 @@ body{
     font-weight: 300;
     font-size: 16px;
     font-style: normal;
-    background: linear-gradient(to bottom right, #ffdfc4, #ffe4c4 );
+    background: linear-gradient(to bottom right, #ffe0c3, #ffb997);
 }
 p{
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
+    color:#084b4b;
 }
 
 h1{
     font-size: 2.5rem;
+    color:#053333
 }
 h2{
     font-size: 1.8rem;
+    color:#053333
+
 }
 h3{
     font-size: 1.5rem;
+    color:#053333
+
+}
+h4{
+    color:#063b3b;
 }
 html{
     scroll-behavior: smooth;
@@ -55,22 +64,23 @@ html{
 .nav-title{
     font-size: 1.5rem;
     font-weight: bold;
+    color:#053333;
 }
 .nav-title:hover{
     cursor: default;
 }
 a{
     text-decoration: none;
-    color: #2e2e2e;
+    color: #3e1f17;
     text-decoration-color:transparent;
     text-underline-offset: 0.2rem;
     transition: all 300ms ease;
 }
 a:hover{
-    color: #008080;
+    color: #ff7e5f;
     text-decoration:solid underline 2.5px;
     text-underline-offset: 1rem;
-    text-decoration-color: #008080;
+    text-decoration-color: #ff7e5f;
 }
 
 nav, .nav-links{
@@ -83,14 +93,14 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    background:linear-gradient(to bottom,#ffdfc4 80%,transparent);
-    transition: box-shadow 0.3s linear, background 0.3s linear;
+    background: linear-gradient(to bottom, #ffe0c368 80%, transparent);
+    backdrop-filter: blur(10px);
+    transition: all 0.25s linear;
 }
 
 nav:hover{
     background: peachpuff;
-    box-shadow: rgba(0,80,80,0.5) 0px 8px 12px;
-    border-radius: 5px;
+    box-shadow: #3e1f177f 0px 8px 12px;
 }
 
 .nav-links{
@@ -121,7 +131,7 @@ nav:hover{
 .menu-icon span{
     width: 100%;
     height:2px;
-    background-color: #2e2e2e;
+    background-color: #4c261c;
     transition: all 300ms ease;
 }
 .menu-links{
@@ -141,11 +151,11 @@ nav:hover{
     text-align: center;
     font-size: 1.5rem;
     text-decoration: none;
-    color: #2e2e2e;
+    color: #3e1f17;
     opacity:0;
 }
 .menu-links a:hover{
-    color: #008080;
+    color: #ff7e5f ;
 }
 .menu-links li{
     list-style: none;
@@ -214,9 +224,9 @@ nav:hover{
     width: 150px;
     height: 2.5rem;
     border-radius: 15px;
-    background-color: #5f9ea0;
+    background: linear-gradient(90deg,#9ac6c6, #91baba);
     border: none;
-    color: #ffdfc4;
+    color: #3e1f17;
     font-weight: bold;
     box-shadow: #2e2e2e 0px 4px 6px;
     margin:1rem;
@@ -224,8 +234,8 @@ nav:hover{
 }
 .btn:hover{
     box-shadow: none;
-    background-color: coral;
-    color:#2e2e2e;
+    background: linear-gradient(90deg,#ff7e5f , #f07051);;
+    color:#053333;
     box-shadow: #2e2e2e 0px 2px 3px;
     cursor:pointer;
 
@@ -264,7 +274,7 @@ nav:hover{
     transition: all 300ms ease;
 }
 .git,.linked-in{
-    background: linear-gradient(to bottom, #f0d5b5, bisque);
+    background: linear-gradient(to bottom, #f0d5b5, #ffe4c4);
     border:none;
     margin-right: 1rem;
     border-radius: 50px;
@@ -277,7 +287,7 @@ nav:hover{
 }
 .info p{
     max-width: 50vw;
-    color: #2e2e2e;
+    color: #084b4b;
     margin-top: 0.3rem;
     text-align: center;
 }
@@ -354,6 +364,7 @@ nav:hover{
     align-self: center;
     padding:10px;
     margin: 10px;
+    fill:#053333;
 }
 .logo-name{
     opacity: 0;
