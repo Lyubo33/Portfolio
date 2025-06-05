@@ -14,9 +14,7 @@ const links = [
 async function generateSitemap() {
   const sitemapStream = new SitemapStream({
     hostname: baseUrl, 
-    xmlns:{
-        custom:['http://www.sitemaps.org/schemas/sitemap/0.9'],
-    }
+    xmlns: true,
     });
   const outputPath = path.join(__dirname, '../dist/sitemap.xml');
   const writeStream = createWriteStream(outputPath);
