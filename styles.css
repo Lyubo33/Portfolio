@@ -34,9 +34,8 @@ p{
     color:#084b4b;
 }
 
-h1{
-    font-size: 2.5rem;
-    color:#053333
+.h1-hidden{
+    display: none;
 }
 h2{
     font-size: 1.8rem;
