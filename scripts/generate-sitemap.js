@@ -12,7 +12,7 @@ const links = [
 ];
 
 async function generateSitemap() {
-  const sitemapStream = new SitemapStream({hostname: baseUrl});
+  const sitemapStream = new SitemapStream({hostname: baseUrl, xml:true});
   const outputPath = path.join(__dirname, '../dist/sitemap.xml');
   const writeStream = createWriteStream(outputPath);
   sitemapStream.pipe(writeStream);
