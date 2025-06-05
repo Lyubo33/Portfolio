@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir dist && node scripts/generate-sitemap.js"
+    "build": "parcel build index.html --dist-dir dist && node scripts/generate-sitemap.js && node scripts/copy-robots.js"
   },
   "devDependencies": {
     "sitemap": "8.0.0",
